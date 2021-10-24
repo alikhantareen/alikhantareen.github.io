@@ -13,7 +13,10 @@ const About = () => {
     <div className="font-mono dark:bg-black dark:text-white">
       <Header />
       <section className="w-full flex justify-center">
-        <div id="heading" className="w-1/2 h-auto flex flex-col gap-10 items-center p-8 mt-8">
+        <div
+          id="heading"
+          className="w-1/2 h-auto flex flex-col gap-10 items-center p-8 mt-8"
+        >
           <p className="text-6xl font-mono font-extrabold">
             Hi, I am Ali Khan.
           </p>
@@ -36,11 +39,29 @@ const About = () => {
             for you.
           </p>
           <div className="flex gap-4 items-center">
-            <button className="font-mono p-4 w-36 bg-gray-900 text-white rounded-sm hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-gray-800">
-              resume
-            </button>
-            <i class="fa fa-github fa-2x"></i>
-            <i class="fa fa-linkedin fa-2x"></i>
+            <a
+              href="https://docs.google.com/document/d/1LMfCPihoLBsX43_BefKHgZ7BR0AHIuyb6EK1CTYOkgY/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="font-mono p-4 w-36 bg-gray-900 text-white rounded-sm hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-gray-800">
+                resume
+              </button>
+            </a>
+            <a
+              href="https://github.com/alikhantareen"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa fa-github fa-2x dark:bg-black dark:text-white"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ali-khan-445530136/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa fa-linkedin fa-2x dark:bg-black dark:text-white"></i>
+            </a>
           </div>
         </div>
       </section>
@@ -51,12 +72,21 @@ const About = () => {
         <div id="projects" className="flex justify-around p-5">
           {projects.map((project) => {
             return (
-              <div id="project-card" className="w-1/4 text-center p-6 hover:-translate-y-2 transform transition shadow-2xl">
+              <div
+                id="project-card"
+                className="w-1/4 text-center p-6 hover:-translate-y-2 transform transition shadow-2xl"
+              >
                 <p className="text-2xl font-mono font-bold" key={project.id}>
                   {project.heading}
                 </p>
                 <p className="mt-2">{project.description}</p>
-                <i className="fa fa-github fa-2x mt-2"></i>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fa fa-github fa-2x mt-2"></i>
+                </a>
               </div>
             );
           })}
@@ -67,7 +97,10 @@ const About = () => {
           <p className="text-4xl font-mono font-bold">SKILLS</p>
         </div>
         <div className="flex flex-col items-center">
-          <div id="skill" className="w-1/3 flex flex-wrap justify-center gap-6 mt-6 p-3">
+          <div
+            id="skill"
+            className="w-1/3 flex flex-wrap justify-center gap-6 mt-6 p-3"
+          >
             {skills.map((skill) => {
               return (
                 <div className="w-1/4 p-3 h-auto flex justify-center items-center hover:-translate-y-1 transform transition shadow-lg">
@@ -80,9 +113,11 @@ const About = () => {
       </section>
       <section className="w-full flex flex-col justify-center items-center gap-10 mt-16 mb-16">
         <div className="text-4xl font-mono font-bold">CONTACT</div>
-        <button className="font-mono p-4 w-36 bg-gray-900 text-white rounded-sm hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-gray-800">
-          email me
-        </button>
+        <a href="mailto:creditableboy@gmail.com">
+          <button className="font-mono p-4 w-36 bg-gray-900 text-white rounded-sm hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-gray-800">
+            email me
+          </button>
+        </a>
       </section>
       <Footer />
     </div>
