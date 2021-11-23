@@ -16,6 +16,11 @@ const ProjectsData = [
         heading: 'Shopping App',
         description: 'Frontend UI design and functionality for a fictional retail company using React, Zustand, React-Routers and more.Managing global state and cart for a user.',
         link: 'https://github.com/alikhantareen/shopify'
+    },
+    {
+        id: 4,
+        heading: 'OLX clone',
+        description : 'A OLX clone where people can upload ads of their products.(Project is in making...)'
     }
 ]
 
