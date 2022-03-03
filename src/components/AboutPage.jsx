@@ -24,44 +24,27 @@ const About = () => {
             A Front End Engineer.
           </p>
           <p className="font-mono text-justify">
-            Hey! Myself Ali Iftikhar and I have completed my Master's in
-            computer science in 2019. Since then, I am very fascinated by
-            developing the web for the people out there. Therefore, I have done
-            4 of the courses from freecodecamp.org including:-{" "}
+            Hello! This is Ali Khan, a front end web developer. Since my
+            graduation, I was very fascinated in developing the web
+            applications. I started my journey in March 2021 and took part in
+            freecodecamp.org courses. There, I completed four certificates of
+            web technologies. Certificates, including:-{" "}
             <span className="font-bold">1:</span> Responsive web design.{" "}
             <span className="font-bold">2:</span> JavaScript.{" "}
             <span className="font-bold">3:</span> Front end libraries (React,
             bootstrap, redux, jQuery). <span className="font-bold">4:</span> API
-            and micro web services. I have made some miniprojects using these
-            languages during the courses on freecodecamp.org.Besides these
-            projects, I have made a project of frontend UI template for the
-            online shopping website. I am very fascinated to build impossible
-            for you.
+            and micro web services. Parallel to these certificates, I was also
+            working on self-taught programming and made some projects too, apart
+            from the course projects. Even after a long time, I am still very
+            excited in web development and would really aprreciate the chance to go
+            further more.
           </p>
           <div className="flex gap-4 items-center">
-            <a
-              href="https://docs.google.com/document/d/1LMfCPihoLBsX43_BefKHgZ7BR0AHIuyb6EK1CTYOkgY/edit?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="font-mono p-4 w-36 bg-gray-900 text-white rounded-sm hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-gray-800">
-                resume
-              </button>
-            </a>
-            <a
-              href="https://github.com/alikhantareen"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fa fa-github fa-2x dark:bg-black dark:text-white"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/ali-khan-445530136/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fa fa-linkedin fa-2x dark:bg-black dark:text-white"></i>
-            </a>
+            <button className="font-mono p-4 w-36 bg-gray-900 text-white rounded-sm hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-gray-800">
+              resume
+            </button>
+            <i class="fa fa-github fa-2x"></i>
+            <i class="fa fa-linkedin fa-2x"></i>
           </div>
         </div>
       </section>
@@ -80,13 +63,7 @@ const About = () => {
                   {project.heading}
                 </p>
                 <p className="mt-2">{project.description}</p>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fa fa-github fa-2x mt-2"></i>
-                </a>
+                <i className="fa fa-github fa-2x mt-2"></i>
               </div>
             );
           })}
@@ -113,11 +90,9 @@ const About = () => {
       </section>
       <section className="w-full flex flex-col justify-center items-center gap-10 mt-16 mb-16">
         <div className="text-4xl font-mono font-bold">CONTACT</div>
-        <a href="mailto:creditableboy@gmail.com">
-          <button className="font-mono p-4 w-36 bg-gray-900 text-white rounded-sm hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-gray-800">
-            email me
-          </button>
-        </a>
+        <button className="font-mono p-4 w-36 bg-gray-900 text-white rounded-sm hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-gray-800">
+          email me
+        </button>
       </section>
       <Footer />
     </div>
