@@ -21,30 +21,61 @@ const About = () => {
             Hi, I am Ali Khan.
           </p>
           <p className="text-3xl font-mono font-extralight">
-            A Front End Engineer.
+            A Front-End Engineer.
           </p>
           <p className="font-mono text-justify">
-            Hello! This is Ali Khan, a front end web developer. Since my
-            graduation, I was very fascinated in developing the web
-            applications. I started my journey in March 2021 and took part in
-            freecodecamp.org courses. There, I completed four certificates of
-            web technologies. Certificates, including:-{" "}
-            <span className="font-bold">1:</span> Responsive web design.{" "}
-            <span className="font-bold">2:</span> JavaScript.{" "}
-            <span className="font-bold">3:</span> Front end libraries (React,
-            bootstrap, redux, jQuery). <span className="font-bold">4:</span> API
-            and micro web services. Parallel to these certificates, I was also
-            working on self-taught programming and made some projects too, apart
-            from the course projects. Even after a long time, I am still very
-            excited in web development and would really aprreciate the chance to go
-            further more.
+            Hello! This is Ali Khan Tareen, a front-end web developer. Since my
+            graduation, I was very fascinated in developing web applications. I
+            started my journey in March 2021 and enrolled in{" "}
+            <a
+              className="no-underline hover:underline"
+              href="https://www.freecodecamp.org/"
+            >
+              freecodecamp
+            </a>{" "}
+            courses. There I completed four certificates of web technologies
+            that include:
+          </p>
+          <ul className="list-disc">
+            <a
+              className="no-underline hover:underline"
+              href="https://www.freecodecamp.org/certification/fcc3fe63628-6543-42d0-91b4-5513154b21d9/responsive-web-design"
+            >
+              <li>Responsive Web Design</li>
+            </a>
+            <a
+              className="no-underline hover:underline"
+              href="https://www.freecodecamp.org/certification/fcc3fe63628-6543-42d0-91b4-5513154b21d9/javascript-algorithms-and-data-structures"
+            >
+              <li>Javascript Algorithms and Data Structures</li>
+            </a>
+            <a
+              className="no-underline hover:underline"
+              href="https://www.freecodecamp.org/certification/fcc3fe63628-6543-42d0-91b4-5513154b21d9/front-end-development-libraries"
+            >
+              <li>Front End Development Libraries</li>
+            </a>
+            <a
+              className="no-underline hover:underline"
+              href="https://www.freecodecamp.org/certification/fcc3fe63628-6543-42d0-91b4-5513154b21d9/back-end-development-and-apis"
+            >
+              <li>Back End Development and APIs</li>
+            </a>
+          </ul>
+          <p>
+            Parallel to these certificates, I was also working on self-taught
+            programming and creating some hobby projects, apart from the course
+            projects. I am really excited in web development and would really
+            aprreciate the chance to go further.
           </p>
           <div className="flex gap-4 items-center">
-            <button className="font-mono p-4 w-36 bg-gray-900 text-white rounded-sm hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-gray-800">
-              resume
-            </button>
-            <i class="fa fa-github fa-2x"></i>
-            <i class="fa fa-linkedin fa-2x"></i>
+            <a
+              href="https://docs.google.com/document/d/1LMfCPihoLBsX43_BefKHgZ7BR0AHIuyb6EK1CTYOkgY/edit?usp=sharing"
+              target="_blank"
+              className="font-mono p-4 bg-gray-900 text-white text-lg rounded-sm hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-gray-800"
+            >
+              Resume
+            </a>
           </div>
         </div>
       </section>
@@ -63,7 +94,6 @@ const About = () => {
                   {project.heading}
                 </p>
                 <p className="mt-2">{project.description}</p>
-                <i className="fa fa-github fa-2x mt-2"></i>
               </div>
             );
           })}
@@ -90,9 +120,9 @@ const About = () => {
       </section>
       <section className="w-full flex flex-col justify-center items-center gap-10 mt-16 mb-16">
         <div className="text-4xl font-mono font-bold">CONTACT</div>
-        <button className="font-mono p-4 w-36 bg-gray-900 text-white rounded-sm hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:text-white dark:hover:bg-gray-800">
-          email me
-        </button>
+        <p className="w-1/4 p-3 h-auto flex justify-center items-center hover:-translate-y-1 transform transition shadow-lg">
+        alikhantareen09@gmail.com
+        </p>
       </section>
       <Footer />
     </div>

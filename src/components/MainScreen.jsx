@@ -18,9 +18,6 @@ const MainScreen = () => {
             <a href="https://www.linkedin.com/in/ali-khan-445530136/" target="_blank" rel="noopener noreferrer">
             <i class="fa fa-linkedin fa-2x dark:bg-black dark:text-white"></i>
             </a>
-            <a href="https://docs.google.com/document/d/1LMfCPihoLBsX43_BefKHgZ7BR0AHIuyb6EK1CTYOkgY/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
-            <i class="fa fa-google fa-2x dark:bg-black dark:text-white"></i>
-            </a>
             <a href="https://github.com/alikhantareen" target="_blank" rel="noopener noreferrer">
             <i class="fa fa-github fa-2x dark:bg-black dark:text-white"></i>
             </a>
